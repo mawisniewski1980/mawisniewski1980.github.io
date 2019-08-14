@@ -1,31 +1,37 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
-    color: #777;
-}
-
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url(../images/jesus-hilario-h-5v69Vl62NCM-unsplash.jpg);
-    height: 100%;
     opacity: 0.90;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
-.section1 {
-    background-color: #111;
+.flexbox-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.project {
+    padding: 20px;
+    margin: 5px;
     color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
     border-radius: 25px;
     border: 1px solid #919191;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 2;
+    background-color: #111;
+    transition: all .3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px #919191, 2px 2px #919191, 3px 3px #919191;
 }
 
 a {
@@ -33,95 +39,47 @@ a {
     text-decoration: none;
 }
 
-header a.github {
-    position: relative;
-}
-
-header a.github::after {
-    content: url(https://image.flaticon.com/icons/svg/270/270798.svg);
-    width: 14%;
-    height: 100%;
-    position: absolute;
-    top: -5px;
-    right: 20px;
-}
-
-main a {
-    position: relative;
-}
-
-main a::before {
-    position: absolute;
-    left: -20px;
-    content: '';
-    width: 2px;
-    height: 40px;
-    background-color: #3a6eb0;
-    opacity: 0.90;
-    transition: transform .3s ease-in;
-    will-change: transform;
-}
-
-main a:hover::before {
-    transform: translateX(5px) scaleX(5);
-}
-
-main a::after {
-    content: '';
-}
-
-footer a.linkedin {
-    position: relative;
-}
-
-footer a.linkedin::after {
-    content: url(https://image.flaticon.com/icons/svg/124/124011.svg);
-    width: 17%;
-    height: 100%;
-    position: absolute;
-    right: 10px;
-    top: -4px;
-}
-
-footer a.photo {
-    position: relative;  
-    font-size: 10px;
-    letter-spacing: 1px;
-}
-
-footer a.photo::after {
-    content: url(https://image.flaticon.com/icons/svg/148/148717.svg);
-    width: 13%;
-    height: 100%;
-    position: absolute;
-    right: 0px;
-    top: -14px;
-}
-
-footer p {
-    margin: 0;
-    padding: 0%;
-}
-
-footer a.flaticon {
-    position: relative;  
-    font-size: 10px;
-    letter-spacing: 0px;
-}
-
-footer a.flaticon::after {
-    content: url(https://image.flaticon.com/icons/svg/148/148717.svg);
-    width: 9%;
-    height: 100%;
-    position: absolute;
-    right: -12px;
-    top: -15px;
-}
-
-
 ul {
-    list-style: none;
-    margin-left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
+li {
+    text-align: center;
+}
 
+.flexbox-container li {
+    padding: 5px;
+}
+
+.selenide,
+.jbehave,
+.testng {
+    width: 40px;
+    height: 20px;
+}
+
+.selenium,
+.junit5,
+.spring,
+.reporter {
+    width: 20px;
+    height: 20px;
+}
+
+.reporter {
+    filter: invert(100%);
+}
+
+.flexbox-footer {
+    border-top: 1px solid #919191;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+@media (min-width: 760px) {
+    .flexbox-container {
+        flex-direction: row;
+    }
+}
