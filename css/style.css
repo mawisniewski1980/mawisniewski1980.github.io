@@ -10,21 +10,21 @@ body {
 .flexbox-container {
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: 90vh;
-    flex-direction: column;
 }
 
-.project {
+.flexbox-container>.project {
     padding: 20px;
     margin: 5px;
     color: #fff;
     border-radius: 25px;
     border: 1px solid #919191;
-    justify-content: center;
     flex-grow: 1;
-    flex-shrink: 2;
+    flex: 1 1 30%;
+    height: 100px;
     background-color: #111;
     transition: all .3s ease-in-out;
 }
