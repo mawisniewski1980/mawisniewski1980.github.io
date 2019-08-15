@@ -3,7 +3,7 @@ body {
     background-image: url(../images/jesus-hilario-h-5v69Vl62NCM-unsplash.jpg);
     opacity: 0.90;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
