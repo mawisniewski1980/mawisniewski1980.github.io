@@ -1,17 +1,5 @@
-@media screen and (min-width:576px) {}
-
-@media screen and (min-width:768px) {}
-
-@media screen and (min-width:992px) {}
-
-@media screen and (min-width:1280px) {}
-
 body {
     background-color: #B7CADB;
-}
-
-.selector-for-some-widget {
-    box-sizing: content-box;
 }
 
 ul {
@@ -38,15 +26,11 @@ li {
     font-size: 10px;
 }
 
-.card {
-    min-height: 200px;
-}
-
 .card-header {
     font-family: 'Anton', sans-serif;
     font-size: 20px;
     background-color: #2E4054;
-    color: #A3A29D;
+    color: #FFFFFF;
 }
 
 .card-footer {
@@ -60,4 +44,40 @@ li {
 .card-body a {
     font-family: 'Judson', serif;
     font-size: 12px;
+}
+
+.height-5 {
+    min-height: 5vh;
+}
+
+.height-80 {
+    min-height: 80vh;
+}
+
+.height-100 {
+    min-height: 100vh;
+}
+
+@media screen and (min-width:576px) {
+    .card {
+        min-height: 290px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .card {
+        min-height: 290px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .card {
+        min-height: 260px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .card {
+        min-height: 260px;
+    }
 }
