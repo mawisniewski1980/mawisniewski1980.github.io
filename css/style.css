@@ -39,6 +39,7 @@ li {
 
 .card-body {
     background-color: #FFFFFF;
+    height: 100px;
 }
 
 .card-body a {
@@ -46,15 +47,26 @@ li {
     font-size: 12px;
 }
 
+.title-underline {
+    width: 200px;
+    height: 8px;
+    margin: 0 auto;
+}
+
+strong {
+    font-family: 'Anton', sans-serif;
+    text-shadow: 2px 2px #17a2b8;
+}
+
 @media screen and (min-width:576px) {
     .card {
-        min-height: 290px;
+        min-height: 255px;
     }
 }
 
 @media screen and (min-width:768px) {
     .card {
-        min-height: 290px;
+        min-height: 255px;
     }
 }
 
