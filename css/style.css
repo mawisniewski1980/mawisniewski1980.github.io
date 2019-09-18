@@ -1,83 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto+Condensed|Ubuntu&display=swap');
+
 body {
-    background-color: #B7CADB;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Lato';
 }
 
-ul {
-    list-style-type: none;
-    margin: 5px 5px 5px 5px;
-    padding: 0;
+.navbar-brand {
+    font-family: 'Pacifico';
+    font-size: 35px;
+    color: #001427 !important;
 }
 
-li {
-    text-align: center;
+.changecolor {
+    color: #708D81;
 }
 
-.wide_icon {
-    width: 60px;
-    height: 30px;
+.nav-link {
+    font-size: 16px;
+    margin: 15px;
+    color: #000 !important;
+    font-family: 'Roboto Condensed';
 }
 
-.square_icon {
-    width: 40px;
-    height: 40px;
+.nav-link:hover {
+    color: #BF0603 !important;
 }
 
-.align-items-end {
-    font-size: 10px;
+.active .nav-link {
+    color: #BF0603 !important;
 }
 
-.card-header {
-    font-family: 'Anton', sans-serif;
-    font-size: 20px;
-    background-color: #2E4054;
-    color: #FFFFFF;
+.menu-right-btn {
+    padding: 13px 46px;
+    margin-right: 4%;
+    background-color: transparent;
+    transition: all 300ms ease-in; 
 }
 
-.card-footer {
-    background-color: #2E4054;
+.menu-right-btn:hover {
+ color: #001427;
+ background-color: #708D81;
 }
 
-.card-body {
-    background-color: #FFFFFF;
-    height: 100px;
+.site-content {
+    background-image: url('../images/capacitors-chips-circuit-board-2582937.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.card-body a {
-    font-family: 'Judson', serif;
-    font-size: 12px;
+.site-title, .site-desc {
+    color: #ffffff;
+    font-family: 'Righteous';
 }
 
-.title-underline {
-    width: 200px;
-    height: 8px;
-    margin: 0 auto;
+.site-title {
+    margin-top: 25%;
+    margin-bottom: 6%;
+    font-size: 50px;
 }
 
-strong {
-    font-family: 'Anton', sans-serif;
-    text-shadow: 2px 2px #17a2b8;
+.site-desc {
+    font-size: 14px;
+    padding-left: 10%;
 }
 
-@media screen and (min-width:576px) {
-    .card {
-        min-height: 255px;
+.site-btn1 {
+    margin-left: 15%;
+    background-color: #000;
+    color: #ffffff;
+}
+
+.site-btn2 {
+    margin-left: 15%;
+    background-color: #ffffff;
+}
+
+.site-btn1, .site-btn2 {
+    margin-top: 5%;
+    margin-bottom: 25%;
+}
+
+.card {
+    width: 20rem;
+    min-height: 342px;
+}
+
+.section-1 {
+    margin-bottom: 8%;
+}
+
+.section-1 .heading-1{
+    margin-top: 8%;
+}
+
+.section-1 .heading-2{
+    margin-bottom: 5%;
+    font-size: 39px;
+}
+
+.section-1 .para-1 {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+.section-1 .card-text, .para-1 {
+    color: #708D81;
+}
+
+.section-1 a {
+    text-decoration: none;
+    color: #8D0801 !important;
+}
+
+.section-1 a:hover {
+    color: #BF0603 !important;
+}
+
+.active .nav-link {
+    color: #BF0603 !important;
+}
+
+.section-2 .container-fluid {
+    background-image: url(../images/code-coder-codes-2194062.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-2 .heading-1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Righteous';
+    width: 80%;
+    color: whitesmoke;
+}
+
+.section-2 .para {
+    width: 80%;
+    font-family: 'Ubuntu';
+    color: whitesmoke;
+    margin-bottom: 15%;
+}
+
+.section-2 .btn {
+    margin-bottom: 15%;
+    width: 30%;
+    padding: 2% 5%;
+}
+
+.section-3 {
+    margin-top: 6%;
+}
+
+.section-3 i, .section-3 a {
+    color: #8D0801;
+    text-decoration: none;
+}
+
+.section-3 p {
+    color: #708D81;
+}
+
+.section-4 {
+    margin-top: 8%;
+}
+
+.section-4 .row .col-md-7, .col-md-5 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.section-4 a {
+    color: #8D0801;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.section-4 .para-1 {
+    color: #ffffff;
+    font-family: 'Roboto Condensed';
+    margin-top: 7%;
+    font-size: 23px;
+}
+
+
+
+.section-5 h5, .section-5 a {
+    color: #343a40;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .section-1 .card {
+        width: 14rem;
+    }
+    .section-4 .col-md-7 img{
+        width: 350px;
     }
 }
 
-@media screen and (min-width:768px) {
-    .card {
-        min-height: 255px;
+@media screen and (max-width: 320px) {
+    .site-content .site-title {
+        font-size: 30px;
+        padding-left: 15%;
     }
-}
-
-@media screen and (min-width:992px) {
-    .card {
-        min-height: 260px;
+    .site-content .site-btn1 {
+      margin-left: 15%;
     }
-}
+    .site-content .site-btn2 {
+        display: none;
+    }
+    .section-1 .heading-1,  .section-1 .heading-2 {
+        font-size: 25px;
+    }
+    .section-1 .col-md-4 {
+        padding: 5%;
+        margin-left: 8%;
+    }
+    .section-1 .card {
+        width: 15rem;
+    }
+    .section-4 .col-md-5 {
+        padding: 0% 15%;
 
-@media screen and (min-width:1280px) {
-    .card {
-        min-height: 260px;
     }
 }
