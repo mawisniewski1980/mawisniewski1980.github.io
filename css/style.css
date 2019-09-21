@@ -83,7 +83,7 @@ body {
 
 .card {
     width: 20rem;
-    min-height: 342px;
+    min-height: 367px;
 }
 
 .section-1 {
@@ -171,6 +171,12 @@ body {
     margin-bottom: 10%;
 }
 
+.section-4 .row .col-md-7 img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
 .section-4 a {
     color: #708D81;
     text-decoration: none;
@@ -208,7 +214,7 @@ body {
         width: 14rem;
     }
     .section-4 .col-md-7 img{
-        width: 350px;
+        width: 300px;
     }
 }
 
@@ -236,5 +242,8 @@ body {
     .section-4 .col-md-5 {
         padding: 0% 15%;
 
+    }
+    .section-4 .col-md-7 img{
+        width: 100px;
     }
 }
