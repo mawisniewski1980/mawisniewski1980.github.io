@@ -181,6 +181,7 @@ body {
     color: #708D81;
     text-decoration: none;
     font-size: 16px;
+    padding-left: 5px;
 }
 
 .section-4 a:hover {
@@ -201,8 +202,12 @@ body {
 .section-4 ul {
     color: #ffffff;
     margin-top: 5%;
+    list-style: none;
 }
 
+.section-4 ul ul {
+    margin-top: 0px;
+}
 
 .section-5 h5, .section-5 a {
     color: #343a40;
