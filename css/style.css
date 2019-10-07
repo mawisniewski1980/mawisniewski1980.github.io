@@ -6,6 +6,10 @@ body {
     font-family: 'Lato';
 }
 
+ul {
+    list-style: none;
+}
+
 .navbar-brand {
     font-family: 'Pacifico';
     font-size: 35px;
@@ -202,7 +206,6 @@ body {
 .section-4 ul {
     color: #ffffff;
     margin-top: 5%;
-    list-style: none;
 }
 
 .section-4 ul ul {
