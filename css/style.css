@@ -98,9 +98,11 @@ main {
   height: 100%;
 }
 
+main span {
+  color: rgba(255, 255, 255, 1);
+}
+
 main span:hover {
-  color: rgba(255, 255, 255, 0.5);
-  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.4);
   cursor: pointer;
- 
 }
