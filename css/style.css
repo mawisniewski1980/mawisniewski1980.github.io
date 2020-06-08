@@ -39,7 +39,7 @@ body {
 }
 
 .masthead {
-  margin-bottom: 2rem;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .masthead-brand {
@@ -87,4 +87,20 @@ body {
 
 .mastfoot {
   color: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.mastfoot p {
+  margin: 0;
+}
+
+main {
+  height: 100%;
+}
+
+main span:hover {
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+  cursor: crosshair;
+ 
 }
