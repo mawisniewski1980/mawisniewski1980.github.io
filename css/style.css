@@ -14,10 +14,10 @@ html, body {
     font-size: 12px;
 }
 
-@media (min-width: 1025px) { body { font-size: 120%; } .my-hight { height: 95%; } }
-@media (max-width: 1024px) { body { font-size: 100%; } .my-hight { height: 95%; } }  
-@media (max-width: 768px) { body { font-size: 80%; } .my-hight { height: 95%; } }
-@media (max-width: 375px) { body { font-size: 60%; } .my-hight { height: 95%; } }
+@media (min-width: 1025px) { body { font-size: 120%; } .my-height { height: 95%; } }
+@media (max-width: 1024px) { body { font-size: 100%; } .my-height { height: 95%; } }  
+@media (max-width: 768px) { body { font-size: 80%; } .my-height { height: 95%; } }
+@media (max-width: 375px) { body { font-size: 60%; } .my-height { height: 95%; } }
 
 a, a:focus, a:hover {
     color: #fff;
