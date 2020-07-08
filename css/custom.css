@@ -1,0 +1,33 @@
+*{margin:0;padding:0;text-align:center;margin:0 auto}
+body,html{margin:0 auto;color:#fff;text-shadow:0 .05rem .1rem rgba(0,0,0,.5);box-shadow:inset 0 0 5rem rgba(0,0,0,.5);height:100%;font-size:12px}
+a,a:focus,a:hover{color:#fff;text-decoration:none}
+body{background:url(../images/photo-of-golden-cogwheel-on-black-background-3785931.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
+@media (max-width:575.98px){
+body{font-size:60%}
+}
+@media (min-width:576px) and (max-width:767.98px){
+body{font-size:80%}
+}
+@media (min-width:768px) and (max-width:991.98px){
+body{font-size:100%}
+}
+@media (min-width:992px) and (max-width:1199.98px){
+body{font-size:100%}
+}
+@media (min-width:1200px){
+body{font-size:120%}
+}
+.nav-item{outline:0;color:#fff;text-decoration:none;letter-spacing:1px;font-weight:400;text-shadow:0 0 1px rgba(255,255,255,.3);font-size:1.em;transition-property:all;transition-duration:1s;transition-timing-function:ease-in-out}
+.nav-item a:focus,.nav-item a:hover{outline:0}
+.nav-item a::after,.nav-item a::before{display:inline-block;opacity:0;-webkit-transition:-webkit-transform .3s,opacity .2s;-moz-transition:-moz-transform .3s,opacity .2s;transition:transform .3s,opacity .2s}
+.nav-item a::before{margin-right:5px;content:'[';-webkit-transform:translateX(20px);-moz-transform:translateX(20px);transform:translateX(20px)}
+.nav-item a::after{margin-left:5px;content:']';-webkit-transform:translateX(-20px);-moz-transform:translateX(-20px);transform:translateX(-20px)}
+.nav-item a:focus::after,.nav-item a:focus::before,.nav-item a:hover::after,.nav-item a:hover::before{opacity:1;-webkit-transform:translateX(0);-moz-transform:translateX(0);transform:translateX(0)}
+.glow{-webkit-animation:glow 1s ease-in-out infinite alternate;-moz-animation:glow 1s ease-in-out infinite alternate;animation:glow 1s ease-in-out infinite alternate}
+@keyframes glow{
+from{text-shadow:0 0 10px #fff,0 0 20px #fff,0 0 30px #ffdf00,0 0 40px #d4af37,0 0 50px #cfb53b,0 0 60px #c5b358,0 0 70px #e6be8a}
+to{text-shadow:0 0 20px #fff,0 0 30px #cfb53b,0 0 40px #cfb53b,0 0 50px #cfb53b,0 0 60px #cfb53b,0 0 70px #cfb53b,0 0 80px #cfb53b}
+}
+.custom p{margin:0;padding:0}
+.custom a{color:rgba(255,255,255,.6);transition-property:color;transition-duration:1s;transition-timing-function:ease-in-out}
+.custom a:focus,.custom a:hover{color:rgba(255,255,255,.9)}
