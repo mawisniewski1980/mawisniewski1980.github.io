@@ -33,20 +33,11 @@ to{text-shadow:0 0 20px #fff,0 0 30px #cfb53b,0 0 40px #cfb53b,0 0 50px #cfb53b,
 .custom a:focus,.custom a:hover{color:rgba(255,255,255,.9)}
 
 .pixel {
-    position: absolute;
-   /*  width: 2px; Size of each pixel */
-    /* height: 2px; /* Size of each pixel */
-    background-color: white; /* Default pixel color */
-    animation: blink infinite ease-in-out;
-    opacity: 0; /* Start invisible */
-  }
-  
-  @keyframes blink {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
-  
+position: absolute;
+border-radius: 50%;
+animation: twinkle ease-in-out infinite;
+}
+@keyframes twinkle {
+0%, 100% { opacity: 0; }
+50% { opacity: 1; }
+}

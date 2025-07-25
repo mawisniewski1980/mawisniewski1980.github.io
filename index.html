@@ -12,20 +12,31 @@
 <body class="d-flex justify-content-center align-items-center">
  <div class="container-fluid">
   <script>
-    let container = document.getElementsByClassName('container-fluid');
-    let size_stars = Math.floor(Math.random() * 300) + 1
-    for (i = 0; i <= size_stars; i++) {
-      let div = document.createElement('div');
-      div.className = 'pixel';
-      let size_one = (Math.floor(Math.random() * 3) + 1) + 'px'
-      div.style.width = size_one
-      div.style.height = size_one
-      div.style.animationDuration = (Math.floor(Math.random() * 10) + 1) + 's'
-      div.style.animationDelay = (Math.floor(Math.random() * 10) + 0.1) + 's'
-      div.style.top = (Math.floor(Math.random() * 95) + 1) + '%'
-      div.style.left = (Math.floor(Math.random() * 95) + 1) + '%'
-      // div.textContent = i; // Add numbers to the divs
-      container[0].appendChild(div);
+        const container = document.body;
+    const totalPixels = Math.floor(Math.random() * 300) + 100;
+
+    for (let i = 0; i < totalPixels; i++) {
+      const pixel = document.createElement('div');
+      pixel.classList.add('pixel');
+
+      // Losowy rozmiar
+      const size = Math.floor(Math.random() * 8) + 3;
+      pixel.style.width = `${size}px`;
+      pixel.style.height = `${size}px`;
+
+      // Losowa pozycja
+      pixel.style.top = `${Math.random() * 100}%`;
+      pixel.style.left = `${Math.random() * 100}%`;
+
+      // Losowy kolor (HSL = ładne kolory)
+      const hue = Math.floor(Math.random() * 360);
+      pixel.style.backgroundColor = `hsl(${hue}, 100%, 70%)`;
+
+      // Losowy czas i opóźnienie animacji
+      pixel.style.animationDuration = `${Math.random() * 5 + 1}s`;
+      pixel.style.animationDelay = `${Math.random() * 5}s`;
+
+      container.appendChild(pixel);
     }
   </script>
   <div class="d-flex justify-content-center align-items-center">
