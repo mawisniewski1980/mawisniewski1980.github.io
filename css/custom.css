@@ -23,7 +23,7 @@ body{font-size:120%}
 .nav-item a::before{margin-right:5px;content:'[';-webkit-transform:translateX(20px);-moz-transform:translateX(20px);transform:translateX(20px)}
 .nav-item a::after{margin-left:5px;content:']';-webkit-transform:translateX(-20px);-moz-transform:translateX(-20px);transform:translateX(-20px)}
 .nav-item a:focus::after,.nav-item a:focus::before,.nav-item a:hover::after,.nav-item a:hover::before{opacity:1;-webkit-transform:translateX(0);-moz-transform:translateX(0);transform:translateX(0)}
-.glow{-webkit-animation:glow 1s ease-in-out infinite alternate;-moz-animation:glow 1s ease-in-out infinite alternate;animation:glow 1s ease-in-out infinite alternate}
+.nav-item.glow{-webkit-animation:glow 1s ease-in-out infinite alternate;-moz-animation:glow 1s ease-in-out infinite alternate;animation:glow 1s ease-in-out infinite alternate}
 @keyframes glow{
 from{text-shadow:0 0 10px #fff,0 0 20px #fff,0 0 30px #ffdf00,0 0 40px #d4af37,0 0 50px #cfb53b,0 0 60px #c5b358,0 0 70px #e6be8a}
 to{text-shadow:0 0 20px #fff,0 0 30px #cfb53b,0 0 40px #cfb53b,0 0 50px #cfb53b,0 0 60px #cfb53b,0 0 70px #cfb53b,0 0 80px #cfb53b}
@@ -32,14 +32,23 @@ to{text-shadow:0 0 20px #fff,0 0 30px #cfb53b,0 0 40px #cfb53b,0 0 50px #cfb53b,
 .custom a{color:rgba(255,255,255,.6);transition-property:color;transition-duration:1s;transition-timing-function:ease-in-out}
 .custom a:focus,.custom a:hover{color:rgba(255,255,255,.9)}
 
-.pixel {
-  position: absolute;
-  display: block; /* <-- WAŻNE */
-  border-radius: 50%; /* okrąg */
-  animation: twinkle ease-in-out infinite;
-  will-change: opacity; /* poprawa renderowania animacji */
-}
-@keyframes twinkle {
-    0%, 100% { opacity: 0; }
-    50% { opacity: 1; }
-}
+    .pixel {
+      position: absolute;
+      display: block;
+      border-radius: 50%;
+      background-color: white;
+      width: 8px;
+      height: 8px;
+      animation: twinkle ease-in-out infinite, glow 1.2s ease-in-out infinite alternate;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+      from {
+              box-shadow: 0 0 5px #fff, 0 0 10px #0ff, 0 0 15px #0ff;
+            }
+            to {
+              box-shadow: 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff;
+            }
+    }
