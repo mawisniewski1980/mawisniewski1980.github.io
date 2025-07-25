@@ -32,23 +32,23 @@ to{text-shadow:0 0 20px #fff,0 0 30px #cfb53b,0 0 40px #cfb53b,0 0 50px #cfb53b,
 .custom a{color:rgba(255,255,255,.6);transition-property:color;transition-duration:1s;transition-timing-function:ease-in-out}
 .custom a:focus,.custom a:hover{color:rgba(255,255,255,.9)}
 
-    .pixel {
-      position: absolute;
-      display: block;
-      border-radius: 50%;
-      background-color: white;
-      width: 8px;
-      height: 8px;
-      animation: twinkle ease-in-out infinite, glow 1.2s ease-in-out infinite alternate;
-    }
+.pixel {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    animation: twinkle ease-in-out infinite, glow 1.2s ease-in-out infinite alternate;
+}
 
-    @keyframes twinkle {
-      0%, 100% { opacity: 0; }
-      50% { opacity: 1; }
-      from {
-              box-shadow: 0 0 5px #fff, 0 0 10px #0ff, 0 0 15px #0ff;
-            }
-            to {
-              box-shadow: 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff;
-            }
+@keyframes twinkle {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+    from {
+        box-shadow: 0 0 5px #fff, 0 0 10px #0ff, 0 0 15px #0ff;
     }
+    to {
+    box-shadow: 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff;
+        }
+}
